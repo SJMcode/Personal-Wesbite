@@ -342,7 +342,7 @@
             //   console.log(number);
             //   console.log(content);
               let regex_name =  /^[a-zA-Z ]{2,30}$/;
-              let regex_number =/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+              let regex_number = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
               if(regex_name.test(name)){
                   nameError.textContent = "";
 

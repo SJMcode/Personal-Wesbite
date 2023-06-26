@@ -81,9 +81,9 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(../images/prof_img2.jpg);
-    filter: grayscale(100%);
-    clip-path: circle(70%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4)), url('../images/stockholm.jpg');
+    filter: grayscale(30%);
+    clip-path: circle(50%);
     background-size: cover;
     background-position: center;
     display: flex;

@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="css/boxicons.min.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/css2.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- <script defer src="./index.js"> </script> -->
@@ -244,9 +248,10 @@
           learn and improve my skills.
         </p>
         <div class="list">
-          <li><a href="#">+97470071190</a></li>
+          <li><a href="#">+91 8590147337</a></li>
           <li><a href="#">safir.jameel@gmail.com</a></li>
-          <li><a href="#">Please follow, like &amp; subscribe</a></li>
+          <li><a href="#">Please follow, my social media
+             &amp; subscribe</a></li>
         </div>
         <div class="contact-icons">
           <a href="https://www.facebook.com/safir.jameel/"
@@ -342,7 +347,8 @@
             //   console.log(number);
             //   console.log(content);
               let regex_name =  /^[a-zA-Z ]{2,30}$/;
-              let regex_number =/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+              let regex_number = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+;
               if(regex_name.test(name)){
                   nameError.textContent = "";
 
@@ -378,12 +384,12 @@
             }
               
               else{
-                  mobileError.textContent = "Please enter a valid number(123 456 8910).";
+                  mobileError.textContent = "Please enter a valid 10 digit (eg. 850 045 8910).";
               }
 
             }
                   else{
-                      emailError.textContent = "Please enter a valid email address.";
+                      emailError.textContent = "Email must be in a valid email format (e.g., username@coolexample.com). Please try again.";
                   }
                 }
               else{
@@ -394,8 +400,7 @@
     </script>
 
     <!--custom js link-->
-    <script src="
-https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js
-"></script>
+
+<script src="./js/script.js"></script>
 </body>
 </html>

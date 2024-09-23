@@ -2,7 +2,7 @@ The **Data orchestration** is a method or a tool that manages data-related activ
 
 # Data Orchestration Strategy for Financial Data
 
-Objective
+### Objective
 The goal of this data orchestration strategy is to define an approach for automating, scheduling, and managing data workflows such as data ingestion, data transformation, and data quality checks. Using orchestration tools like Airflow, Azure Data Factory, or Prefect, the strategy ensures timely, reliable, and scalable data pipeline execution.
 
 1a. **Tool Selection and Environment Setup**: Apache Airflow: Best suited for complex, Python-based DAG (Directed Acyclic Graph) workflows with multiple dependencies.
@@ -15,13 +15,13 @@ Set up logging, error handling, and notification mechanisms for monitoring and a
 2a: ### **Data Ingestion**
     Automate the extraction of data from various sources (e.g., SEC EDGAR API, internal databases)
 
-Key Steps:
+### Key Steps:
 
 - Source Connection: Configure connections to APIs, databases (Postgres).
 - Data Ingestion Pipeline: Create pipelines to ingest data in various formats (JSON, CSV, XML) at regular intervals, such as real-time or scheduled daily updates.
 - Parallel Execution: Use parallel task execution to handle multiple data sources simultaneously.
 
-Example:
+### Example:
 
 -   For financial statements, use SEC EDGAR’s XBRL API to pull quarterly and annual reports (10-Q, 10-K) for selected companies.
 -   Ingest SEC filings metadata and financial data into a centralized data warehouse for further processing.
